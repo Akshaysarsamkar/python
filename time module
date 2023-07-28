@@ -1,0 +1,46 @@
+#strptime function
+import time 
+s = "mon, 02 Aug 2014 10:21:07"
+t = time.strptime(s,"%a, %d %b %Y %H:%M:%S")   
+print (t)
+
+<-- second example -->
+t = time.strftime("%d:%b:%y %a %H:%M:%S") 
+print ("todat date is:", t)
+
+
+#gmtime function
+import time 
+t = 40000
+s = time.gmtime(t) 
+print (s)
+print (time.asctime(s))
+print (time.gmtime())
+
+
+#mktime function covert time expression into second 
+s =(1970, 9, 13, 1, 30, 26, 4, 296, 0) 
+t = time. mktime(s) 
+print (t)
+
+
+#sleep function
+import time 
+for i in range(0, 5) :
+  time.sleep(1) 
+  print(i)
+time. sleep (2)
+print ("Program finish") 
+
+
+#ctimefunction:- return thr 24 character time string but takes second as argument  if no argument is passed time is calculated till the present 
+s= time. ctime(591239*3789) 
+t = time.ctime () 
+print("current time is:",t)
+print ("Random time is:",s)
+
+
+import time
+#asctime functiom
+t = time.asctime(time.gmtime()) 
+print (t)
