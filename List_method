@@ -1,0 +1,38 @@
+a = [1,2,3,4,5,6,7,8,9] 
+b = ["akshay","Karan","dhananjah"] 
+
+#reverse method 
+a.reverse() 
+print ("Reverse list:",a)
+
+#index method 
+ind = a.index(3) 
+print("value of index 3 is:",ind) 
+
+#copy() method 
+c =a.copy() 
+print(c)
+
+#append method 
+a.append(10) 
+print ("After the append list is:\n",a) 
+#insert method 
+a.insert(0,0) 
+print ("After the insert:\n",a)
+
+#extend method 
+a.extend(b) 
+print (a) 
+
+#remove method 
+a.remove(0)
+print(a)
+
+#pop method 
+b.pop() 
+print (b)
+ 
+
+#clear() method 
+b.clear() 
+print (b)
