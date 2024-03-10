@@ -1,0 +1,57 @@
+a = {
+  "name":" Akshay ", 
+  "rno":1, 
+  " per":67.1
+} 
+b = {
+  "name":"karan", 
+  "rno":2, 
+  " per":69.1, 
+  "adds":"pune"
+}
+
+#copy method
+x = a.copy() 
+print ("After the copy method:")
+print (x) 
+
+#get method 
+print ("After the get method:")
+print(a.get("name")) 
+
+#item method
+print ("After the item method")
+i = b.items() 
+print (i)
+
+#keys method 
+print ("After the keys method:") 
+k = b.keys() 
+print (k)
+
+#pop method 
+print ("After the pop method:")
+a.pop("rno") 
+print (a)
+
+#popitem method 
+print("After the popitem method")
+pi = b.popitem() 
+print (pi)
+
+#update method 
+a.update(b) 
+print ("After the update method")
+print (a)
+
+#setdefault method 
+a.setdefault ("college","bjs") 
+print (a)
+
+#clear method 
+b.clear() 
+print (b)
+
+#del method 
+del a["name"]
+print (a)
