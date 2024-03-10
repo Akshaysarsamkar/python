@@ -1,0 +1,87 @@
+a = {1,2,3,4,5} 
+b = {1,3,5,7} 
+
+#intersection method
+x = a. intersection(b) 
+print (x) 
+
+#imtersection_update method
+a.intersection_update (b) 
+print (a) 
+
+#isdisjoint method
+y = a.isdisjoint(b)
+print (y)
+
+#symmetric_difference method
+s = a.symmetric_difference (b)
+print (s)
+
+#symmetric difference update method
+a.symmetric_difference_update (b) 
+print (a)
+
+
+#union method
+u=a.union (b) 
+print(u)
+s = {1,2,3,4,5,6,7,8,9} 
+s1 = {"Akahay","Karan","Pankaj"} 
+a = {1,2,3,4,5}
+print (s,"\n",s1) 
+
+
+#add method 
+s1. add("Dhananjay") 
+print ("add method\n",s1)
+
+#remove method 
+s.remove(9) 
+print ("remove method\n",s)
+
+#clear method 
+
+
+
+#update method 
+s.update (s1) 
+print ("Update method\n",s) 
+
+#copy method 
+x = a.copy() 
+print ("Copy method\n",x)
+
+
+#difference method
+di = a.difference(s) 
+print ("After difference method:\n",di)
+
+
+#difference_update method 
+du = s.difference_update(a)
+print("diff_update method:\n",du)
+
+
+
+#intersection method 
+i = a.intersection(s) 
+print ("intersection method\n",i) 
+
+#intersection_update method 
+iu=a.intersection_update(s)
+print(iu)
+
+#isdisjoint method 
+idj = a.isdisjoint (s)
+print (idj)
+
+#issubset method 
+sub = a.issubset(s) 
+print (sub)
+
+
+#issuperset 
+sup = s.issuperset(a)  
+print (sup)
+
+
