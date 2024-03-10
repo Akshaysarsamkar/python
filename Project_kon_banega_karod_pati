@@ -1,0 +1,123 @@
+from time import sleep 
+from random import randint
+
+qua = [
+[
+  "____mean interaction and interconnection between  stysem? ","interface","feedback","Environment","Boundaries",1
+] , 
+
+[
+  "Which of the following is the proper syntax for declaring macros in C?", "#define long long ll", "#define ll long long", "#define ll","#define long long", 2
+], 
+
+[
+  "c++ was developed by? ", " Dannie Ritchie","Ada Lovelace","Bjarne Stroustrup", "Jemes Gosling", 3
+], 
+
+[
+  "C was developed by?"," Dannie Ritchie","Ada Lovelace","Bjarne Stroustrup", "Jemes Gosling", 1
+], 
+
+[
+"Which of the following is an exit controlled loop?", "While loop.", "For loop.", "do-while loop.","None of the above", 3
+], 
+
+[
+     "In which of the following languages is function overloading not possible?", "C","C++","Java","Python", 1
+], 
+  [
+    "JavaScript was developed by? ","Jemes Gosling","Guido van Rossum","Anders Hejlsberg","Brendan Eich", 4
+  ], 
+
+[
+    "Who created the first DBMS?","Edgar Frank Codd", "Charles Bachman","harles Babbage", "Sharon B. Codd", 2
+], 
+
+[
+  "In general, a file is basically a collection of all related______.", "Rows & Columns","Fields","Database", 
+collection of all related______.", "Rows & Columns","Fields","Database", 
+"Records",4
+], 
+
+[ 
+"Which of the following is a linear data structure?","Array", "AVL Trees", 
+"Binary Trees","Graphs", 1
+] 
+]
+
+
+use=0
+
+
+#amount level
+level = [1000,2000,3000,4000,5000,10000,20000,40000,80000,160000,320000,640000,1280000,2560000,1000000]
+
+
+
+#money = 0
+for i in range(0,len(qua)) : 
+ money = 0
+ ans = qua[i] 
+ print(f"\n\nquation for RS. {level [i]}")
+ print(f"{ans[0]}")
+ print(f"a.{ans[1]}\nb.{ans[2]}")
+  print(f"c.{ans[3]}\nd.{ans[4]}") 
+
+
+  
+#life line operation 
+ if(use==0):
+   if i >= 4 :
+    op1 = "Y"
+    op2 = "y"
+    ch = input("do you want to use life line option<Y/N>:") 
+    if (ch == op1 or ch==op2):
+      name=input("tell the person name:")
+      print(f"calling {name}.......")
+      sleep(5)
+      print(f"{name} Receive Call")
+      use =1
+    else :
+      print("no i can not use my life line now")
+
+
+  
+#audience lifeline 
+ elif(use==1):
+   ap = input("Do You want to Your audience Poll Life line<Y/N>:")
+   if(ap == "y" or ap == "Y"):
+       print("Check the Audience Poll............")
+       sleep(10)
+       poll =randint(0, 101)
+       print (f"Audience Poll is:{poll}")
+       if(poll > 50):
+         print ("You able to use your Audience Poll Lifeline:")
+         print ("Tell The Answer.....")
+         use = 2
+       else:
+         print ("Sorry You Not able to use your Audience Poll Lifeline:")
+      
+
+  
+
+
+ a = int(input("Enter your ans in 1-4 digit:")) 
+   if a == ans[-1] :
+  print(f"congratulations answer is correct you have won Rs {level[i]}") 
+ else :
+  print("sorry answer is wrong :")
+  break;
+#print(i) 
+
+
+if i >= 4 and i < 9:
+   money = 10000
+elif i >= 9 and i < 14:
+   money = 80000 
+elif i == 14 :
+   money = 2560000
+elif i == 15 :
+   money = 1000000  
+
+ 
+print(f"you take home money is:{money}")
