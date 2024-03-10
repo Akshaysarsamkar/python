@@ -1,0 +1,70 @@
+#check the string contains only whitespace then return true &false otherwise
+a = "      "
+b = "akah "
+print (a.isspace())
+print (b.isspace()) 
+
+
+a = "Akshay Sarsamkar" 
+b = "akahay Sar"
+x = a.istitle() 
+print (x)
+print (b.istitle()) 
+
+
+a = "Akahay sarsamkar" 
+x = a.maketrans("A","a") ;
+print (x) 
+
+a = [45,78,12,48,9] 
+x = min(a) 
+y = max(a)
+print(y) 
+print (x) 
+
+s = ["Akahay","sam","smith","smita"]
+print (min(s)) 
+print (max(s)) 
+
+str = "Good morning how are you" 
+x = str.replace ("o","O",)
+print (x) 
+
+a = "hi hello how " 
+x = a.rfind("o",1,8) 
+print (x) 
+
+a = "good morning brother" 
+print (a.rjust(39)) 
+print (a)
+print (a.rstrip(" "))
+
+b = "a!!!########!!!" 
+print(b)
+print (b.rstrip(",!#")) 
+
+a = "how good it is" 
+b = "my name is sam"
+x = a.split() 
+y= b.split("--",2)
+print (y)
+print (x) 
+
+str = "Akshay\nkumar\nchandraprabhu\nsarsamkar"
+xx = str.splitlines() 
+print (xx) 
+
+a = "Akahay how IT good"
+x = a.swapcase() 
+print (x)
+
+print (a.title())
+
+
+a = "akahay" 
+b = "sam" 
+c = "good morning"
+
+print (a.zfill(20)) 
+print (b.zfill(5)) 
+print (c.zfill(6))
